@@ -1,5 +1,5 @@
-# js test environment
+# fastcampus TDD 
 
-빠르고 간단하게 재사용하기 위한 js 테스트 환경 구성
+## 1-3 ~ 1-7 강의 내용 및 예제 코드
 
-- 테스트 도구: jest
+1-3 코드 분해
