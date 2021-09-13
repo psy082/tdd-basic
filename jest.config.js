@@ -1,5 +1,4 @@
 module.exports = async () => ({
-    collectCoverage: true,
     moduleFileExtensions: [
         "js",
         "mjs"
