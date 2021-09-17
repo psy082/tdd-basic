@@ -1,8 +1,17 @@
 export default function refineText(source, options) {
-    return [normalizeWhiteSpaces, compactWhiteSpaces, maskBannedWords].reduce(
+    return [
+        normalizeWhiteSpaces,
+        compactWhiteSpaces,
+        maskBannedWords,
+        trimWhitespaces,
+    ].reduce(
         (value, filter) => filter(value, options),
         source
     );
+}
+
+function trimWhitespaces(source) {
+    return source.trim();
 }
 
 function maskBannedWords(source, options) {

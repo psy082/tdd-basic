@@ -34,4 +34,12 @@ describe('sut', () => {
             expect(actual).toBe(expected);
         });
     });
+
+    it.each`
+        source | expected
+        ${" hello world"} | ${"hello world"}
+    `('correctly trims whitespace', ({ source, expected }) => {
+        const actual = sut(source);
+        expect(actual).toBe(expected);
+    })
 });
